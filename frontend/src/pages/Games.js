@@ -8,7 +8,6 @@ const Games = () => {
   const [userScores, setUserScores] = useState([]);
   const [leaderboard, setLeaderboard] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [showScores, setShowScores] = useState(false);
   const [memoryCards, setMemoryCards] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [matchedCards, setMatchedCards] = useState([]);

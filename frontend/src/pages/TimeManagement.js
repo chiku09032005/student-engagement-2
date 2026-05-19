@@ -25,6 +25,7 @@ const TimeManagement = () => {
     requestNotificationPermission();
     fetchData();
     return clearAlarms;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const clearAlarms = () => {

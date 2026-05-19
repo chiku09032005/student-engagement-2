@@ -20,7 +20,7 @@ const AIBot = () => {
   const [streakMessage, setStreakMessage] = useState('');
   const [streakDays, setStreakDays] = useState(7);
   const [aiAnswer, setAiAnswer] = useState('');
-  const [portalTab, setPortalTab] = useState('my-doubts');
+
 
   useEffect(() => {
     fetchDoubts();
@@ -28,15 +28,18 @@ const AIBot = () => {
     fetchQuote();
     fetchFAQ(formData.category);
     fetchQuickTips(formData.category);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     fetchFAQ(formData.category);
     fetchQuickTips(formData.category);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [formData.category]);
 
   useEffect(() => {
     fetchCommunityDoubts(communityCategory);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [communityCategory]);
 
   const fetchDoubts = async () => {

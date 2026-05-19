@@ -314,7 +314,6 @@ const Social = () => {
 
             <button
               onClick={() => {
-                const text = `Check out Student Engagement Hub - a platform for students to connect, learn, and grow! I'm ${profileData.name} from ${profileData.collegeName || 'my college'}.`;
                 const shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.origin)}`;
                 window.open(shareUrl, '_blank');
               }}
